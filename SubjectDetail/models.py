@@ -10,3 +10,5 @@ class Subjects(models.Model):
     subject_image = models.ImageField(upload_to='uploads/subject_images/', null=True, blank=True)
     updated_on = models.DateTimeField(auto_now_add=True)
     
+    def __str__(self):
+        return self.name
