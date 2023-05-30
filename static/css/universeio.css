@@ -1,0 +1,392 @@
+.nav-btn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    /* border:  solid rgb(61, 106, 255); */
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.nav-btn:hover,
+.css-sub-videos:hover {
+    background: z;
+    -webkit-box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.nav-btn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.nav-btn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0 50px 30px #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@-webkit-keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.nav-btn:active {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+    transition: -webkit-box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+
+
+/* _________________videos list menu BUTTON CSS____________________ */
+
+.container-menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+/* ________END___videos___list___BUTTON CSS____________________ */
+
+
+/* Universal button */
+
+.subvidoes-nav-btn {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #315cfd;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subvidoes-nav-btn:hover {
+    background: #c4c4c4;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/* End Universal button */
+
+
+/* go to subjects */
+
+.scene {
+    width: 10em;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.cube {
+    color: #ccc;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all 0.85s cubic-bezier(.17, .67, .14, .93);
+    transition: all 0.85s cubic-bezier(.17, .67, .14, .93);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    width: 10em;
+    height: 4em;
+}
+
+.cube:hover {
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.side {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-weight: bold;
+}
+
+.top {
+    background: wheat;
+    color: #222229;
+    -webkit-transform: rotateX(90deg) translate3d(0, 0, 2em);
+    transform: rotateX(90deg) translate3d(0, 0, 2em);
+    -webkit-box-shadow: inset 0 0 0 5px #fff;
+    box-shadow: inset 0 0 0 5px #fff;
+}
+
+.front {
+    background: #222229;
+    color: #fff;
+    -webkit-box-shadow: inset 0 0 0 5px #fff;
+    box-shadow: inset 0 0 0 5px #fff;
+    -webkit-transform: translate3d(0, 0, 2em);
+    transform: translate3d(0, 0, 2em);
+}
+
+
+/* css-sub-videos is class for videos list a tag */
+
+
+/* CSS for sign up form */
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    -webkit-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    -webkit-text-decoration: underline royalblue;
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.form label .input:-moz-placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:-ms-input-placeholder+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    -webkit-transform: .3s ease;
+    -ms-transform: .3s ease;
+    transform: .3s ease;
+}
+
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(1.8);
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+
+/* END CSS for sign up form */

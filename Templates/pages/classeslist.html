@@ -1,0 +1,21 @@
+{% extends 'pages/basic.html'%}
+
+{% block content%}
+
+<section>
+  <div class="card-container">
+    {% for i in eclasses %}
+      <a href="{{i}}" style="color: red; text-decoration: none;">
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">{{i}}</p>
+            <p class="text-body">{{i.subject_description}}</p>
+          </div>
+          <button class="card-button">{{i}}</button>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock%}

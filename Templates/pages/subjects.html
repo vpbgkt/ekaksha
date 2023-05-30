@@ -1,0 +1,27 @@
+{% extends 'pages/basic.html'%}
+
+{% block content %}
+
+<section>
+  <div class="card-container">
+    {% for i in subjects %}
+    <div class="card mb-3">
+      <a href="http://127.0.0.1:8000/subject/{{ forloop.counter }}">
+        <div class="card-body">
+          <img src="/media/{{i.Subject_image}}" class="card-img-top" alt="course1">
+          <h5 class="card-title">{{ i.subject_name }}</h5>
+          <p class="card-text">{{ i.subject_description }}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
+
+{% comment %} 
+
+{'subject': <Subjects: UnlockTool>, 'videos': <QuerySet [<Video: Video 1>, <Video: video 2>, <Video: video 3>, <Video: viddoe 4>]>} 
+  
+{% endcomment %}

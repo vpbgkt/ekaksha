@@ -1,0 +1,172 @@
+html,
+body {
+    /* background-image: url('/static/images/pxfuel.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 50rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 100vh;
+    flex-grow: 1;
+}
+
+.active {
+    color: chartreuse !important;
+}
+
+nav {
+    backdrop-filter: blur(5px);
+    background-color: rgb(30 52 176 / 79%) !important;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+
+/*.............CSS for footer.......... */
+
+footer {
+    background-color: rgba(30, 53, 181, 0.79) !important;
+    opacity: 1;
+}
+
+
+/*............. END CSS for footer.......... */
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+
+/* --- CENTER CONTENT===== */
+
+.container {
+    margin-bottom: 50px;
+    /* Change the value as per your requirement */
+}
+
+
+/* enD CENTER CONTENT */
+
+
+/* ____________Card for the classes desgins________ */
+
+.card-container {
+    margin-bottom: 50px;
+    /* Change the value as per your requirement */
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* columns adjust to fit available space, with a minimum width of 200px */
+    gap: 2rem;
+    /* space between cards */
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: 0.5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+
+
+/*Text*/
+
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/*Hover*/
+
+.card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+
+/* __________END  Card for the classes desgins__________ */

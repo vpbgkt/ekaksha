@@ -1,1 +1,36 @@
-<h1>This is inddex.</h1>
+{% extends 'pages/basic.html' %}
+
+{% block content%}
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <video controls poster="path_to_poster_image.jpg" class="w-100"  controls width="1000" height="650"> 
+          <source src="path_to_video.mp4" type="video/mp4">
+          <source src="path_to_video.webm" type="video/webm">
+          <p>Your browser does not support HTML5 video. Please upgrade your browser to see the video.</p>
+        </video>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <h2>Watch our video</h2>
+          <p>This is the demo video for our site.</p>
+          <a href="path_to_video.mp4" class="btn btn-primary">Play now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock%}
+
+
+
+{% comment %} 
+Notes -  {{request.path}} - Used to print the path on website;
+
+2. {% url 'home' as url %} #alias url can be same
+class = "{% if request.path == url %} active {% endif %} 
+
+3. onmouseover / onmouseout is used to stop or play marque by mouse hover
+{% endcomment %}
