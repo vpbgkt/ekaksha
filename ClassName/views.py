@@ -5,16 +5,10 @@ from ClassName.models import ClassName
 
 class ClassNameListView(ListView):
     model = ClassName
-    template_name = 'index.html'
+    template_name = 'pages/classeslist.html'
     context_object_name = 'classname'
     
-class ClassNameDetailView(DetailView):
-    model = ClassName
-    template_name = 'index.html'
-    context_object_name = 'classname'
-
-# def eclass_list(request):
-#     eclasses = Eclass.objects.all()
-#     context = {'eclasses': eclasses}
-#     return render(request, 'pages/classeslist.html', context)
-
+# class ClassNameDetailView(DetailView,):
+#     model = ClassName
+#     template_name = 'pages/subjects.html'
+#     context_object_name = 'classname'

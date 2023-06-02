@@ -1,3 +1,2 @@
 # ekaksha
-exerimental change 1
-exp change 2
+The project is about to create an universal software which can run by all institutions for teaching studets.
