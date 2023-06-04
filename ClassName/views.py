@@ -6,7 +6,7 @@ from ClassName.models import ClassName
 class ClassNameListView(ListView):
     model = ClassName
     template_name = 'pages/classeslist.html'
-    context_object_name = 'classname'
+    context_object_name = 'ClassListData'
     
 # class ClassNameDetailView(DetailView,):
 #     model = ClassName

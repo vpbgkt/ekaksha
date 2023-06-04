@@ -1,16 +1,17 @@
 {% extends 'pages/basic.html'%}
 
 {% block content %}
-<h1> This is the Headind of subjects.htmll<h1>
+
 <section>
   <div class="card-container">
     {% for i in subjects %}
+    
     <div class="card mb-3">
-      <a href="http://127.0.0.1:8000/subject/{{ forloop.counter }}">
+      <a href="{{ homepage }}{{request.path}}{{ forloop.counter }}">
         <div class="card-body">
-          <img src="/media/{{i.Subject_image}}" class="card-img-top" alt="course1">
-          <h5 class="card-title">{{ i.subject_name }}</h5>
-          <p class="card-text">{{ i.subject_description }}</p>
+          <img src="/media/{{i.Subject_image}}" class="card-img-top" alt="SubjectLogo">
+          <h5 class="card-title">{{ i.name }}</h5>
+          <p class="card-text">{{ i.title }}</p>
         </div>
       </a>
     </div>

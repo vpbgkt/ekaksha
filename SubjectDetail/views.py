@@ -4,7 +4,7 @@ from SubjectDetail.models import Subjects
 
 class SubjectListView(ListView):
     model = Subjects
-    template_name = 'subjects_detail.html'
+    template_name = 'pages/subjects.html'
     context_object_name = 'subjects'
 
     def get_queryset(self):

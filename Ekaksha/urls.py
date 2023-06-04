@@ -23,9 +23,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage),
-    path('ClassName/', include('ClassName.urls')),
-    path('Subjects/', include('SubjectDetail.urls')),
+    path('', views.homepage,name='homepage'),
+    path('course/', include('ClassName.urls')),
+    path('', include('SubjectDetail.urls')),
+    path('', include('LectureVideos.urls'),name='subjectlist'),
     
 
 

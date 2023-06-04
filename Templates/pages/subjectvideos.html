@@ -18,7 +18,7 @@
         <div class="border-end bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading border-bottom bg-light">Learning</div>
             <div class="list-group list-group-flush">
-                {% for video in videos %}
+                {% for video in lecturelist %}
                     <a class="list-group-item list-group-item-action list-group-item-light p-3 css-sub-videos" href="{{ video.video_url }}">{{ video.title }}</a>
                 {% endfor %}
             </div>
@@ -39,13 +39,13 @@
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                         </button>
-                        <button class='subvidoes-nav-btn'><a href='{% url 'eclass_list' %}' style="text-decoration: none;">Classes</a></button>
+                        <button class='subvidoes-nav-btn'><a href='{% url 'ClassName:ClassName-list' %}' style="text-decoration: none;">Classes</a></button>
                         {% comment %} <button><a href='#' style="text-decoration: none;">Subjects</a></button> {% endcomment %}
 
                     </div>
                 </div>
                 
-                {% if videos %}
+                {% if lecturelist %}
                 <!-- Source learning video  -->
                 <div class="ratio ratio-16x9 ms-auto" id="player" style="--bs-aspect-ratio: 56%; width: auto; height: 500px">
                     <iframe id="myFrame"
