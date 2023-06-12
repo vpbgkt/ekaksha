@@ -26,19 +26,9 @@ urlpatterns = [
     path('', views.homepage,name='homepage'),
     path('course/', include('ClassName.urls')),
     path('', include('SubjectDetail.urls')),
-    path('', include('LectureVideos.urls'),name='subjectlist'),
+    # path('', include('LectureVideos.urls'),name='subjectlist'),
     
-
-
-
     path('aboutus/', views.aboutus, name='aboutus'),
-    # path('ClassName/', include('ClassName.urls')),
-    # path('Classes/', views.eclass_list, name='eclass_list'),
-    # path('subject/', views.subject, name='subject'),
-    
-    # path('subject/<subject_id>/', views.subject_videos, name='subject_videos'),
-    # path('eclass_list/<int:eclass_id>/', name='subjects'),
-    # path('Classes/<str:class_name>/',views.subject, name='eclass_list'),
     path('contect/', views.contect, name='contect'),
     # path('signup', views.signup, name='signup'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # New

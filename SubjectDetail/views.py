@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from SubjectDetail.models import Subjects
 
 class SubjectListView(ListView):
@@ -15,6 +15,7 @@ class SubjectListView(ListView):
         queryset = Subjects.objects.filter(class_name_id=class_pk)
 
         return queryset
+
 
 
 

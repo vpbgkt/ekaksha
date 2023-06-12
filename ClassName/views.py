@@ -8,7 +8,8 @@ class ClassNameListView(ListView):
     template_name = 'pages/classeslist.html'
     context_object_name = 'ClassListData'
     
-# class ClassNameDetailView(DetailView,):
-#     model = ClassName
-#     template_name = 'pages/subjects.html'
-#     context_object_name = 'classname'
+class ClassNameDetailView(DetailView):
+    model = ClassName
+    template_name = 'pages/classesdetails.html'
+    context_object_name = 'ClassDetaildata'
+    
