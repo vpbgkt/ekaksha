@@ -9,8 +9,8 @@ def homepage(request):
     return render(request, 'index.html', data)
 
 def contect(request):
-    return render(request, 'pages/contect.html')
+    return render(request, 'pages/basic/contect.html')
 
 def aboutus(request):
-    return render(request, 'pages/aboutus.html', {'navbar': 'aboutus'})
+    return render(request, 'pages/basic/aboutus.html', {'navbar': 'aboutus'})
 

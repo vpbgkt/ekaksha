@@ -4,7 +4,7 @@ from SubjectDetail.models import Subjects
 
 class SubjectListView(ListView):
     model = Subjects
-    template_name = 'pages/subjects.html'
+    template_name = 'pages/subjects/subjects.html'
     context_object_name = 'subjects'
 
     def get_queryset(self):
@@ -16,7 +16,10 @@ class SubjectListView(ListView):
 
         return queryset
 
-
+class SubjectsDetailView(DetailView):
+    model = Subjects
+    template_name = 'pages/subjects/subjectdetail.html'
+    context_object_name = 'subjectdetails'
 
 
 # from django.shortcuts import render
@@ -29,7 +32,3 @@ class SubjectListView(ListView):
 #     template_name = 'index.html'
 #     context_object_name = 'subjectdetails'
     
-# class SubjectsDetailView(DetailView):
-#     model = Subjects
-#     template_name = 'index.html'
-#     context_object_name = 'subjectdetails'
